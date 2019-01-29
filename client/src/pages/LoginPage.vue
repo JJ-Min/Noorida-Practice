@@ -26,6 +26,14 @@
           <label><span class="keep-login">로그인 유지</span></label>
           <vs-switch v-model="keepLogin"/>
         </div>
+        <div class ="flex-container flex-center-sort margin-bottom-20">
+          <router-link :tag="span" class="id-password-link" :to="{ name: 'FindIdPage' }">
+            아이디 찾기</router-link>
+          <br/>
+          <router-link :tag="span" class="id-password-link" :to="{ name: 'FindPasswordPage'}">
+            비밀번호 찾기</router-link>
+
+        </div>
       </div>
     </div>
   </div>
@@ -75,6 +83,14 @@ export default {
       .button-common {
         min-width: 200px;
       }
+      .id-password-link{
+        font-size: 12px;
+        text-decoration: underline blue;
+        margin: 10px;
+        color: blue;
+        align-text: right;
+      }
+
     }
 
   }
